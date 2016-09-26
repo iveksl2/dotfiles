@@ -39,3 +39,5 @@ set smartcase
 " goodr
 :map fd :r ~/.vim/goodr/roxygen_skeleton.R <ENTER>
 :map td :r ~/.vim/goodr/testthat_skeleton.R <ENTER>
+
+set noswapfile
