@@ -1,4 +1,4 @@
-set ocompatible              " be iMproved, required
+set compatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
