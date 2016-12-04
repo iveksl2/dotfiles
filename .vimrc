@@ -1,19 +1,13 @@
-<<<<<<< HEAD
 filetype plugin on          " required
-=======
-set compatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-call vundle#end()            " required
-filetype plugin indent on    " required
-
->>>>>>> a7567066158f58db5e0e4b01f4f74804e3acc8b8
 syntax on
+
+execute pathogen#infect()
+
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_python_ipython = 1
+
+
 
 filetype indent plugin on 
 hi normal ctermbg=black ctermfg=white
