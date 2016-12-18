@@ -7,10 +7,14 @@ let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 let g:slime_python_ipython = 1
 
-
+syntax enable
+:set background=light
+"let g:solarized_termcolors=256
+"set background=light
+"colorscheme solarized
 
 filetype indent plugin on 
-hi normal ctermbg=black ctermfg=white
+"hi normal ctermbg=black ctermfg=white
 "
 " 
 ""Automatic reloading of .vimrc
@@ -22,9 +26,6 @@ hi normal ctermbg=black ctermfg=white
 set number 	" Show line numbers
 set nowrap  " Don't automatically wrap on load
 set fo-=t   " Dont automatically wrap text when typing
-set colorcolumn=80
-highlight ColorColumn ctermbg=233
-
 
 " Real programmers don't use TABs but spaces
 set modeline 
