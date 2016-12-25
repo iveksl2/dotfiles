@@ -7,6 +7,8 @@ alias omni='open /Applications/OmniFocus.app/'
 alias calendar='open https://calendar.google.com'
 alias cal='open https://calendar.google.com'
 alias slack='open /Applications/Slack.app'
+alias mail='open https://mail.google.com/'
+alias gdrive='open https://drive.google.com/'
 
 # manually source zshell plugins
 source ~/.oh-my-zsh/custom/plugins/git-it-on/git-it-on.plugin.zsh
