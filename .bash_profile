@@ -15,6 +15,7 @@ alias yelp='open https://www.yelp.com'
 alias datarobot='open https://app.datarobot.com/'
 alias dr=datarobot
 alias nba='open http://www.espn.com/nba/scores'
+alias pandora='open https://www.pandora.com/music/classical/classical'
 
 # manually source zshell plugins
 source ~/.oh-my-zsh/custom/plugins/git-it-on/git-it-on.plugin.zsh
