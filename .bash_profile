@@ -1,6 +1,6 @@
-# added by Anaconda3 4.2.0 installer
-#export PATH="/Users/igor.veksler/anaconda/bin:$PATH"
 export PATH="/Users/igor.veksler/Desktop/chromedriver:$PATH"
+export PATH="/usr/local/bin/python3:$PATH"
+export PATH="/usr/local/bin/jupyter:$PATH"
 
 # aliases
 alias todo='vim ~/Desktop/todo.txt'
@@ -21,23 +21,24 @@ alias pandora2='open https://www.pandora.com/station/play/3466458669562850606'
 alias webex='open https://datarobot.webex.com/mw3100/mywebex/default.do?siteurl=datarobot'
 alias eats='open https://www.ubereats.com/'
 alias salesforce='open https://datarobot.my.salesforce.com/home/home.jsp'
-alias bball='open https://github.com/iveksl2/bball'
+alias bball_git='open https://github.com/iveksl2/bball'
 alias bball_ref='open http://www.basketball-reference.com/'
 alias fiver='open https://www.fiverr.com/'
 alias laff='open https://courses.edx.org/courses/course-v1:UTAustinX+UT.5.05x+1T2017/info'
 alias matlab='open https://matlab.mathworks.com/'
 
 # workflow shortcuts
-dr_work() {
+dr_workflow() {
     dr
-    pandora
+    pandora2
     cal
     salesforce
     gdrive  
+    omni
 }
 
-bball_work() {
-   bball 
+bball_workflow() {
+   bball_git 
    bball_ref 
    fiver
 }
