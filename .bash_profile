@@ -26,6 +26,10 @@ alias bball_ref='open http://www.basketball-reference.com/'
 alias fiver='open https://www.fiverr.com/'
 alias laff='open https://courses.edx.org/courses/course-v1:UTAustinX+UT.5.05x+1T2017/info'
 alias matlab='open https://matlab.mathworks.com/'
+alias tracker='open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit'
+alias goals='open https://docs.google.com/document/d/1wTcu2-DG8MzSTf7kmP_6_mmu5MyW1GzZosbAkSOPboA/edit'
+alias toggl='open https://toggl.com/app/timer'
+alias confluence='open https://datarobot.atlassian.net/wiki/'
 
 # workflow shortcuts
 dr_workflow() {
@@ -46,6 +50,14 @@ bball_workflow() {
 class() {
     laff
     matlab
+}
+
+weekly_review() {
+    tracker
+    goals
+    mint
+    toggl
+    omni
 }
 
 # manually source zshell plugins
