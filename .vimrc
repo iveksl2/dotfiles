@@ -1,7 +1,12 @@
 filetype plugin on          " required
 syntax on
 
+set nocp
 execute pathogen#infect()
+
+" call pathogen#helptags()
+" call pathogen#runtime_append_all_bundles()"
+
 
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
@@ -23,7 +28,7 @@ filetype indent plugin on
 ""Better copy & paste
 "set clipboard = unnamed
 
-set number 	" Show line numbers
+set number     " Show line numbers
 set nowrap  " Don't automatically wrap on load
 set fo-=t   " Dont automatically wrap text when typing
 
@@ -45,7 +50,7 @@ set smartcase
 :imap jj <Esc>
 
 "" goodr
-"":map fd :r ~/.vim/goodr/roxygen_skeleton.R <ENTER>
-"":map td :r ~/.vim/goodr/testthat_skeleton.R <ENTER>
+":map fd :r ~/.vim/goodr/roxygen_skeleton.R <ENTER>
+":map td :r ~/.vim/goodr/testthat_skeleton.R <ENTER>
 "
 set noswapfile

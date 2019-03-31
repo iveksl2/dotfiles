@@ -7,7 +7,7 @@ alias todo='vim ~/Desktop/todo.txt'
 alias omni='open /Applications/OmniFocus.app/'
 alias calendar='open https://calendar.google.com'
 alias cal='open https://calendar.google.com'
-alias slack='open /Applications/Slack.app'
+alias slack='open https://slack.com/signin'
 alias mail='open https://mail.google.com/'
 alias gdrive='open https://drive.google.com/'
 alias drive=gdrive
@@ -31,17 +31,23 @@ alias tracker='open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSL
 alias goals='open https://docs.google.com/document/d/1wTcu2-DG8MzSTf7kmP_6_mmu5MyW1GzZosbAkSOPboA/edit'
 alias toggl='open https://toggl.com/app/timer'
 alias confluence='open https://datarobot.atlassian.net/wiki/'
+alias confluence2='open https://datarobot.atlassian.net/wiki/spaces/CFDS/overview'
 alias admin_dashboard='open https://chartio.com/datarobot/admin-dashboard-gourab/'
 alias dr_docs='open https://app.datarobot.com/docs/'
+alias people='open https://drive.google.com/drive/u/0/folders/1Ll2eN8p5LXpYg3wvNRQMExnAhPOpv6cN'
+alias notes='cd /Users/iveksl2/dev/notes/'
+alias workflowy='open https://workflowy.com/'
+
 
 # workflow shortcuts
 dr_workflow() {
     dr
-    pandora2
     cal
     salesforce
     gdrive  
-    omni
+    workflowy
+    open /Applications/Spotify.app/
+
 }
 
 post_sales() {
@@ -56,9 +62,11 @@ bball_workflow() {
 }
 
 class() {
-   open https://www.datacamp.com/courses/importing-managing-financial-data-in-python
-   open https://www.datacamp.com/courses/manipulating-time-series-data-in-python
-   open https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny
+   open http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
+   open https://www.udemy.com/ai-for-business/
+   open https://trello.com/b/BLplifUB/datacamp-course-roadmap
+   open https://www.datacamp.com/courses/intermediate-sql
+   notes 
 }
 
 dl() {
@@ -69,9 +77,9 @@ dl() {
 weekly_review() {
     tracker
     goals
-    mint
     toggl
     omni
+    open https://www.mint.com
 }
 
 # manually source zshell plugins
