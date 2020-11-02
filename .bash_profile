@@ -1,10 +1,11 @@
 export PATH="/Users/igor.veksler/Desktop/chromedriver:$PATH"
 export PATH="/usr/local/bin/python3:$PATH"
 export PATH="/usr/local/bin/jupyter:$PATH"
+export PATH="/library/texbin/:$PATH"
+#export PATH="/usr/local/bin/:$PATH"
 
 # aliases
 alias todo='vim ~/Desktop/todo.txt'
-alias omni='open /Applications/OmniFocus.app/'
 alias calendar='open https://calendar.google.com'
 alias cal='open https://calendar.google.com'
 alias slack='open https://slack.com/signin'
@@ -22,22 +23,18 @@ alias pandora2='open https://www.pandora.com/station/play/3466458669562850606'
 alias webex='open https://datarobot.webex.com/mw3100/mywebex/default.do?siteurl=datarobot'
 alias eats='open https://www.ubereats.com/'
 alias salesforce='open https://datarobot.my.salesforce.com/home/home.jsp'
-alias bball_git='open https://github.com/iveksl2/bball'
-alias bball_ref='open http://www.basketball-reference.com/'
-alias fiver='open https://www.fiverr.com/'
-alias laff='open https://courses.edx.org/courses/course-v1:UTAustinX+UT.5.05x+1T2017/info'
-alias matlab='open https://matlab.mathworks.com/'
 alias tracker='open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit'
 alias goals='open https://docs.google.com/document/d/1wTcu2-DG8MzSTf7kmP_6_mmu5MyW1GzZosbAkSOPboA/edit'
 alias toggl='open https://toggl.com/app/timer'
 alias confluence='open https://datarobot.atlassian.net/wiki/'
 alias confluence2='open https://datarobot.atlassian.net/wiki/spaces/CFDS/overview'
-alias admin_dashboard='open https://chartio.com/datarobot/admin-dashboard-gourab/'
-alias dr_docs='open https://app.datarobot.com/docs/'
+alias admin_dashboard='open https://chartio.com/datarobot/admin-dashboard-gourab/?DROPDOWN=Alison+Gudmundsen&DROPDOWN=Duncan+Renfrow-Symon&DROPDOWN=Eric+Nussbaumer&DROPDOWN=Vijay+Rajan&DROPDOWN=Chad+Harness&DROPDOWN=Nick+Hamwey&DROPDOWN=Igor+Veksler&DROPDOWN=Cory+Kind&DROPDOWN=Jake+Snyder'
+alias admin_all='open https://chartio.com/datarobot/admin-dashboard-gourab/?DROPDOWN=Alison+Gudmundsen&DROPDOWN=Eric+Nussbaumer&DROPDOWN=Jake+Snyder&DROPDOWN=Duncan+Renfrow-Symon&DROPDOWN=Vijay+Rajan&DROPDOWN=Igor+Veksler&DROPDOWN=Chad+Harness&DROPDOWN=Nick+Hamwey&DROPDOWN=Cory+Kind'
 alias people='open https://drive.google.com/drive/u/0/folders/1Ll2eN8p5LXpYg3wvNRQMExnAhPOpv6cN'
 alias notes='cd /Users/iveksl2/dev/notes/'
 alias workflowy='open https://workflowy.com/'
-
+alias highspot='open https://datarobot.highspot.com/'
+alias spotify='open https://open.spotify.com/'
 
 # workflow shortcuts
 dr_workflow() {
@@ -47,39 +44,25 @@ dr_workflow() {
     gdrive  
     workflowy
     open /Applications/Spotify.app/
-
-}
-
-post_sales() {
-    admin_dashboard 
-    salesforce
-}
-
-bball_workflow() {
-   bball_git 
-   bball_ref 
-   fiver
 }
 
 class() {
-   open http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
-   open https://www.udemy.com/ai-for-business/
-   open https://trello.com/b/BLplifUB/datacamp-course-roadmap
-   open https://www.datacamp.com/courses/intermediate-sql
-   notes 
+   open https://campus.datacamp.com/courses/software-engineering-for-data-scientists-in-python/software-engineering-data-science
+   open https://www.coursera.org/learn/slides/lecture/nAlje/trailer
 }
 
-dl() {
-   open https://www.datacamp.com/courses/deep-learning-in-python 
-   open https://github.com/fchollet/deep-learning-with-python-notebooks 
-}
 
 weekly_review() {
-    tracker
     goals
     toggl
-    omni
-    open https://www.mint.com
+    habits
+    open https://todoist.com/productivity-methods/weekly-review
+}
+
+dating() {
+    open http://www.match.com
+    open http://www.okcupid.com
+    open https://www.seeking.com/member
 }
 
 # manually source zshell plugins
@@ -395,3 +378,35 @@ gitit() {
   else git_open_file $1 $2
   fi
 }
+
+corona() {
+    open https://www.bing.com/covid
+    open https://www.worldometers.info/coronavirus/
+    open https://twitter.com/florian_krammer
+    open https://twitter.com/mlipsitch
+    open https://twitter.com/nataliexdean
+    open https://twitter.com/reichlab
+    open https://twitter.com/scottgottliebmd
+}
+
+
+habits() {
+    open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit#gid=1634401545 
+}
+
+covid_proj() {
+    open https://docs.google.com/document/d/14ooui2AV1AKqrtsC_mhIPBumWYLwJXzN59spjHGodpI/edit?ts=5ed54821
+    open https://docs.google.com/spreadsheets/d/1fjL9rruQiQNmmWxlMBBdV6KOJrd3wMl8LkFel26kQTg/edit#gid=56252838
+    open https://chartio.com/datarobot/covid-simulator-results-geo-agnostic/
+    open https://www.worldometers.info/coronavirus/
+    open https://jenkins.hq.datarobot.com/view/Covid%20Hackathon/view/Simulator/view/Runners/job/Covid_Simulator_production_Pipeline/build?delay=0sec
+    open http://10.221.230.69/
+    open https://covid-19.apps.datarobot.com/overview
+    open https://docs.google.com/document/d/1MJFjCEBMjdW_SeT1FYvU_1VALCv05t70WPMhbZ7P_N0/edit?ts=5ef4d744#heading=h.jy0cn1l7muvu
+    open https://viz.covid19forecasthub.org/
+    open https://covid19-projections.com/
+    open https://docs.google.com/document/d/1pyaOB6ybuvWrr1bU2HYjlvHyAkLrcP0NgbywPAE9Uv4/edit?ts=5efdca2a#heading=h.b5dnlm9g61d5
+    cd /Users/iveksl2/Desktop/covid/covid-simulator/scripts
+}
+
+
