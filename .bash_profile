@@ -76,6 +76,9 @@ alias staging='open https://staging.datarobot.com/'
 alias decisions_slack='open https://app.slack.com/client/T02SCLWEU/C014A4XQ414'
 alias cave='open https://app.slack.com/client/T02SCLWEU/C021E7PC85R'
 alias zepl='open https://app.zepl.com/ODFHKV0LJ?afterLogin=true'
+alias callai='open https://datarobot.mindtickle.com/#/callai/recordings'
+alias daily_review='open https://docs.google.com/document/d/1MJWZZWYUf458i-rOTByEfxMGU0z_MDqXtmzwNWWtDqM/edit'
+alias food_log='open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0'
 
 # workflow shortcuts
 dr_workflow() {
@@ -87,16 +90,42 @@ dr_workflow() {
     open /Applications/Spotify.app/
 }
 
-class() {
-  open https://www.coursera.org/learn/uva-darden-digital-product-management
+daily() {
+  daily_review
+  food_log 
 }
 
+social() {
+  open https://docs.google.com/document/d/1qWuavDK0m26aeXP8eRMkqnxTNcLfvrSyP6UplSZhVoo/edit 
+}
+
+sleep() {
+  open https://docs.google.com/document/d/1OKvPdIN2OuKcCvDx--zFRoJPvia3L5K4ycRGALyd3_c/edit
+}
+
+food() {
+  open https://docs.google.com/document/d/122wDR3NTpJyRT0NPqpBwEqdtQviNOSsj3WeMbFPkfNo/edit
+  open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0 
+}
+
+
+class() {
+    open https://app.datacamp.com/learn/courses/biomedical-image-analysis-in-python 
+    evernote
+    open https://colab.research.google.com/drive/1Sm3DcAfvrQEJ5hPDZ9b2Sdw5uCl9kGs1
+}
+
+finance() {
+    open https://docs.google.com/spreadsheets/d/1KjhfhhdLs1v-f_w6BGCKR8LxGWEOz3wMffX4_pMxbB4/edit#gid=0 
+    open https://docs.google.com/document/d/16I47Y1j3_AandbcAIClulEV4FZ3aRAEjfqPOKQ2j5Uk/edit #"trading signal library"
+}
 
 weekly_review() {
     open https://track.toggl.com/timer 
     workflowy
-    open https://www.coach.me/dashboard
     open https://todoist.com/productivity-methods/weekly-review
+    open https://docs.google.com/document/d/1MJWZZWYUf458i-rOTByEfxMGU0z_MDqXtmzwNWWtDqM/edit
+    open https://docs.google.com/spreadsheets/d/1zrAMaZb8gV_Hl2puSySldr2DUk_vjjpoXSzPos5gf-k/edit#gid=0
 }
 
 dating() {
@@ -123,17 +152,19 @@ habits() {
     open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit#gid=1634401545 
 }
 
-covid_proj() {
-    open https://report-engine.prod.aiapps.datarobot.com/engine/ 
-    cd /Users/igor.veksler/dev/covid_report_engine
-    docker-compose up -d db
-    source .envrc
-    open /Applications/PyCharm.app
-    notes
-    open https://github.com/datarobot/covid_report_engine
-    open https://www.okta.com/
-    poetry run jupyter lab
+pm() {
+    pb
+    open https://datarobot.productboard.com/roadmap/2467221-business-ops-roadmap
+    workflowy 
+    open "https://datarobot.atlassian.net/jira/software/projects/DECISION/boards/807"
+    dr
+    open "https://chartio.com/datarobot/product-usage-dashboard/?FEATURES_FOR_TOP_CHARTS=Decisions+%5Bapp.decisions.list%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D&FEATURES=Decisions+%5Bapp.decisions.list%5D&FEATURES=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D"
+
+    open https://chartio.com/datarobot/sandbox-igor-veksler-igor_decisions_dashboard/
+    open https://docs.google.com/document/d/1O9-ZYtHqT5TEZMFpgcgzzzqOu6udV04iMC3aHf-nF28/edit
+    open https://datarobot.atlassian.net/jira/software/projects/DECISION/boards/807
 }
+
 
 # https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
 function send() {
@@ -174,4 +205,3 @@ function unzip_and_rezip() {
 
 # Useful startup articles
 # https://dev.to/malwarebo/how-to-set-python3-as-a-default-python-version-on-mac-4jjf
-
