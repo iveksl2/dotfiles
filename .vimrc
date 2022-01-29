@@ -1,56 +1,34 @@
-filetype plugin on          " required
-syntax on
+" meta-comment - Nice to link to the original articles the commands come from. Woah woah woah whatsup 
 
-set nocp
-execute pathogen#infect()
+" https://realpython.com/vim-and-python-a-match-made-in-heaven/
+" https://medium.com/@hanspinckaers/setting-up-vim-as-an-ide-for-python-773722142d1d
 
-" call pathogen#helptags()
-" call pathogen#runtime_append_all_bundles()"
-
-
+" https://github.com/jpalardy/vim-slime
 let g:slime_target = "tmux"
-let g:slime_paste_file = "$HOME/.slime_paste"
-let g:slime_python_ipython = 1
+
+set shell=/bin/bash
+
+" https://opensource.com/article/20/2/how-install-vim-plugins
+" https://github.com/junegunn/vim-plug
+"
+" PEP8 Compliance
+" https://stackoverflow.com/questions/36741450/vim-setting-error-under-bufread
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
+" Flag unnecessary whitespace
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 syntax enable
-:set background=light
-"let g:solarized_termcolors=256
-"set background=light
-"colorscheme solarized
+set background=dark
 
-filetype indent plugin on 
-"hi normal ctermbg=black ctermfg=white
-"
-" 
-""Automatic reloading of .vimrc
-""autocmd| bufwritepost .vimrc source %
-"
-""Better copy & paste
-"set clipboard = unnamed
+set encoding=utf-8
+set nu
 
-set number     " Show line numbers
-set nowrap  " Don't automatically wrap on load
-set fo-=t   " Dont automatically wrap text when typing
-
-" Real programmers don't use TABs but spaces
-set modeline 
-set tabstop=4 
-set softtabstop=4
-set shiftwidth =4
-set shiftround
-set expandtab
-
-" Make search case insensitive
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" remaps
-:imap jj <Esc>
-
-"" goodr
-":map fd :r ~/.vim/goodr/roxygen_skeleton.R <ENTER>
-":map td :r ~/.vim/goodr/testthat_skeleton.R <ENTER>
-"
-set noswapfile
+"color solarized8
