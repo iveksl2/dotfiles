@@ -61,13 +61,12 @@ alias highspot='open https://datarobot.highspot.com/'
 alias spotify='open https://open.spotify.com/'
 alias notes='open https://keep.google.com/u/0/'
 alias worldometer='open https://www.worldometers.info/coronavirus/'
-alias myo='open https://docs.google.com/spreadsheets/d/1UFgv1LyP0rzcZ8XHaaQ8TKs3M-tJW4yM/edit#gid=277373036'
+alias myo='open https://www.udemy.com/course/myofunctional-therapy-for-obstructive-sleep-apnea/'
 # https://stuff-things.net/2015/02/17/open-github-repos-from-the-command-line/
 alias gitopen=$'open `git config --get remote.origin.url | awk -F: \'{ print "https://github.com/"$2}\'`'
 alias colab='open https://colab.research.google.com/drive/'
 alias transition='open https://docs.google.com/document/u/1/d/1oyoaLqU-bDm_E8FwG1_sdXC2X8NBiJCucxQ9R7Vok9c/edit'
 alias okta='open https://datarobot.okta.com/app/UserHome'
-alias phttps://www.evernote.com/client/webb='open https://datarobot.productboard.com/'
 alias jira_example='open https://datarobot.atlassian.net/browse/PBMP-3018'
 alias evernote='open https://www.evernote.com/client/web'
 alias whimsical='open https://whimsical.com/loan-default-example-XkY5JAgUsweRTdEZLG1MVQ'
@@ -78,7 +77,7 @@ alias cave='open https://app.slack.com/client/T02SCLWEU/C021E7PC85R'
 alias zepl='open https://app.zepl.com/ODFHKV0LJ?afterLogin=true'
 alias callai='open https://datarobot.mindtickle.com/#/callai/recordings'
 alias daily_review='open https://docs.google.com/document/d/1MJWZZWYUf458i-rOTByEfxMGU0z_MDqXtmzwNWWtDqM/edit'
-alias food_log='open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0'
+alias habit_log='open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0'
 
 # workflow shortcuts
 dr_workflow() {
@@ -91,8 +90,8 @@ dr_workflow() {
 }
 
 daily() {
-  daily_review
-  food_log 
+  habit_log 
+  workflowy
 }
 
 social() {
@@ -110,9 +109,10 @@ food() {
 
 
 class() {
-    open https://app.datacamp.com/learn/courses/biomedical-image-analysis-in-python 
-    evernote
-    open https://colab.research.google.com/drive/1Sm3DcAfvrQEJ5hPDZ9b2Sdw5uCl9kGs1
+    evernote 
+    open https://www.coursera.org/learn/troubleshooting-debugging-techniques
+    open https://www.udemy.com/course/free-your-tongue/learn/
+    open https://www.coursera.org/learn/experimentation/home/
 }
 
 finance() {
@@ -124,32 +124,26 @@ weekly_review() {
     open https://track.toggl.com/timer 
     workflowy
     open https://todoist.com/productivity-methods/weekly-review
-    open https://docs.google.com/document/d/1MJWZZWYUf458i-rOTByEfxMGU0z_MDqXtmzwNWWtDqM/edit
-    open https://docs.google.com/spreadsheets/d/1zrAMaZb8gV_Hl2puSySldr2DUk_vjjpoXSzPos5gf-k/edit#gid=0
+    habit_log
+    open https://docs.google.com/document/d/1nfnMY_sWiy-GZNOM3kWHXTDXPDTKeb-k08QD4TPlNQI/edit
+    open https://docs.google.com/document/d/1OKvPdIN2OuKcCvDx--zFRoJPvia3L5K4ycRGALyd3_c/edit
+    open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit
 }
 
 dating() {
     open http://www.match.com
-    open http://www.okcupid.com
-    open https://www.seeking.com/member
+    open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit
 }
 
-corona() {
-    open https://twitter.com/EricTopol
+covid() {
     open https://www.bing.com/covid
     open https://www.worldometers.info/coronavirus/
-    open https://twitter.com/florian_krammer
-    open https://twitter.com/mlipsitch
-    open https://twitter.com/nataliexdean
-    open https://twitter.com/reichlab
-    open https://twitter.com/scottgottliebmd
-    open https://twitter.com/COVID19Tracking
-    open https://twitter.com/fredtrotter
     open https://github.com/CareSet/COVID_Hospital_PUF
+    open https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project #hospitilizations
 }
 
 habits() {
-    open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit#gid=1634401545 
+    habit_log 
 }
 
 pm() {
@@ -161,7 +155,6 @@ pm() {
     open "https://chartio.com/datarobot/product-usage-dashboard/?FEATURES_FOR_TOP_CHARTS=Decisions+%5Bapp.decisions.list%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D&FEATURES=Decisions+%5Bapp.decisions.list%5D&FEATURES=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D"
 
     open https://chartio.com/datarobot/sandbox-igor-veksler-igor_decisions_dashboard/
-    open https://docs.google.com/document/d/1O9-ZYtHqT5TEZMFpgcgzzzqOu6udV04iMC3aHf-nF28/edit
     open https://datarobot.atlassian.net/jira/software/projects/DECISION/boards/807
 }
 
