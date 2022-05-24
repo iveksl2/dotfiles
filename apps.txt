@@ -4,3 +4,6 @@ toggl -> https://chrome.google.com/webstore/detail/toggl-track-productivity/oejg
 spectacle -> https://www.spectacleapp.com/
 VSCode -> https://code.visualstudio.com/download
 RStudio -> https://www.rstudio.com/
+vim-plug -> https://github.com/junegunn/vim-plug
+
+
