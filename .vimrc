@@ -38,4 +38,5 @@ set noswapfile " disable swap file
 " https://github.com/junegunn/vim-plug
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
+Plug 'jpalardy/vim-slime'
 call plug#end() " Initialize plugin system
