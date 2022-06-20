@@ -39,4 +39,8 @@ set noswapfile " disable swap file
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
 Plug 'jpalardy/vim-slime'
-call plug#end() " Initialize plugin system
+Plug 'heavenshell/vim-pydocstring' "Need to install doq. Read the options 
+call plug#end() 
+
+"todo: Autocomplete ->
+"https://stackoverflow.com/questions/7138039/vim-autocomplete-for-python
