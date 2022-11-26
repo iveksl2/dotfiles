@@ -34,9 +34,10 @@ export PATH="/Users/igor.veksler/Desktop/chromedriver:$PATH"
 export PATH="/usr/local/bin/python3:$PATH"
 export PATH="/usr/local/bin/jupyter:$PATH"
 export PATH="/library/texbin/:$PATH"
-#export PATH="/usr/local/bin/:$PATH"
 export PATH="/usr/local/lib/python3.9/site-packages/jupytext/:$PATH"
 export PATH=/usr/local/opt/python3/libexec/bin:$PATH
+export PATH=$USER/.local/bin:$PATH
+export PATH="/Users/iveksl2/Library/Python/3.8/bin/wandb:$PATH"
 
 # aliases
 alias calendar='open https://calendar.google.com'
@@ -48,14 +49,9 @@ alias drive=gdrive
 alias timer='open https://tomato-timer.com'
 alias datarobot='open https://app.datarobot.com/'
 alias dr=datarobot
-alias drdocs='open https://app.datarobot.com/docs/'
-alias eats='open https://www.ubereats.com/'
-alias salesforce='open https://datarobot.my.salesforce.com/home/home.jsp'
+alias salesforce='open https://wandb.my.salesforce.com/'
 alias tracker='open https://docs.google.com/spreadsheets/d/1C8scKXJSrYqobvAsuOSLn9fdi2ZeTf958qebshyQai4/edit'
 alias toggl='open https://toggl.com/app/timer'
-alias confluence='open https://datarobot.atlassian.net/wiki/'
-alias confluence2='open https://datarobot.atlassian.net/wiki/spaces/CFDS/overview'
-alias confluence3='open https://datarobot.atlassian.net/wiki/spaces/PM/overview'
 alias workflowy='open https://workflowy.com/'
 alias highspot='open https://datarobot.highspot.com/'
 alias spotify='open https://open.spotify.com/'
@@ -70,24 +66,29 @@ alias okta='open https://datarobot.okta.com/app/UserHome'
 alias jira_example='open https://datarobot.atlassian.net/browse/PBMP-3018'
 alias evernote='open https://www.evernote.com/client/web'
 alias whimsical='open https://whimsical.com/loan-default-example-XkY5JAgUsweRTdEZLG1MVQ'
-alias pb='open https://datarobot.productboard.com/feature-board/1693278-business-ops'
+alias pb='open https://wandb.productboard.com/feature-board/5191870-sweeps'
 alias staging='open https://staging.datarobot.com/'
-alias decisions_slack='open https://app.slack.com/client/T02SCLWEU/C014A4XQ414'
-alias cave='open https://app.slack.com/client/T02SCLWEU/C021E7PC85R'
-alias zepl='open https://app.zepl.com/ODFHKV0LJ?afterLogin=true'
-alias callai='open https://datarobot.mindtickle.com/#/callai/recordings'
 alias daily_review='open https://docs.google.com/document/d/1MJWZZWYUf458i-rOTByEfxMGU0z_MDqXtmzwNWWtDqM/edit'
 alias habit_log='open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0'
+alias wnb='open https://wandb.ai/home'
+alias notion='open https://www.notion.so/wandbai/' 
+alias metaculus='open https://www.metaculus.com/questions/'
+alias jira='open https://wandb.atlassian.net/jira/software/c/projects/WB/boards/62'
+alias mode='open https://app.mode.com/wandb/spaces/48c2f82c10d1'
+alias mixpanel='open https://mixpanel.com/project/2536428/view/3076760/app/dashboards#id=3213147'
+alias intercom='open https://app.intercom.com/'
+alias docs='open https://docs.wandb.ai/'# left off on hyper-parameter tuning 
+alias gitbook='open https://app.gitbook.com/o/-Lr2SEfv2R3GSuF1kZCt/s/-Lqya5RvLedGEWPhtkjU-1972196547/'
+alias udemy='open https://www.udemy.com/'
+alias sheets='open https://www.google.com/sheets/about/'
+alias figma='open https://www.figma.com/'
+alias chorus='open https://chorus.ai/dashboard'
+alias gitbook='open https://app.gitbook.com/o/-Lr2SEfv2R3GSuF1kZCt/s/-Lqya5RvLedGEWPhtkjU-1972196547/'
+alias workout="open http://www.youtube.com/watch?v=w-G6NKP-fe8&t=168s"
+alias docsedit='open https://app.gitbook.com/'
+
 
 # workflow shortcuts
-dr_workflow() {
-    dr
-    cal
-    salesforce
-    gdrive  
-    workflowy
-    open /Applications/Spotify.app/
-}
 
 daily() {
   habit_log 
@@ -95,7 +96,7 @@ daily() {
 }
 
 social() {
-  open https://docs.google.com/document/d/1qWuavDK0m26aeXP8eRMkqnxTNcLfvrSyP6UplSZhVoo/edit 
+  open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit 
 }
 
 sleep() {
@@ -108,11 +109,18 @@ food() {
 }
 
 
-class() {
-    evernote 
-    open https://www.coursera.org/learn/troubleshooting-debugging-techniques
-    open https://www.udemy.com/course/free-your-tongue/learn/
+llass() {
     open https://www.coursera.org/learn/experimentation/home/
+    open https://wandb.ai/site/tutorials
+    open /Users/iveksl2/Downloads/NNFS.pdf # 335 
+    open https://fullstackdeeplearning.com/course/2022/
+    open https://github.com/full-stack-deep-learning/fsdl-text-recognizer-2022-labs
+    open https://drive.google.com/drive/u/0/my-drive
+    open https://campus.datacamp.com/courses/monte-carlo-simulations-in-python/
+    open https://blog.dataiku.com/how-to-perform-basic-ml-training-with-scikit-learn-docker-and-kubernetes
+    open https://blog.dataiku.com/how-to-perform-basic-ml-serving-with-python-docker-kubernetes
+    cd /Users/iveksl2/dev/nn_from_scratch
+    code .
 }
 
 finance() {
@@ -123,11 +131,12 @@ finance() {
 weekly_review() {
     open https://track.toggl.com/timer 
     workflowy
-    open https://todoist.com/productivity-methods/weekly-review
+    open https://www.asianefficiency.com/start-here/
     habit_log
     open https://docs.google.com/document/d/1nfnMY_sWiy-GZNOM3kWHXTDXPDTKeb-k08QD4TPlNQI/edit
     open https://docs.google.com/document/d/1OKvPdIN2OuKcCvDx--zFRoJPvia3L5K4ycRGALyd3_c/edit
     open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit
+    open https://track.toggl.com/timer?utm_source=toggl-button&utm_medium=referral
 }
 
 dating() {
@@ -135,29 +144,45 @@ dating() {
     open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit
 }
 
-covid() {
-    open https://www.bing.com/covid
-    open https://www.worldometers.info/coronavirus/
-    open https://github.com/CareSet/COVID_Hospital_PUF
-    open https://carlsonschool.umn.edu/mili-misrc-covid19-tracking-project #hospitilizations
-}
-
 habits() {
     habit_log 
 }
 
 pm() {
-    pb
-    open https://datarobot.productboard.com/roadmap/2467221-business-ops-roadmap
     workflowy 
-    open "https://datarobot.atlassian.net/jira/software/projects/DECISION/boards/807"
-    dr
-    open "https://chartio.com/datarobot/product-usage-dashboard/?FEATURES_FOR_TOP_CHARTS=Decisions+%5Bapp.decisions.list%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES_FOR_TOP_CHARTS=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D&FEATURES=Decisions+%5Bapp.decisions.list%5D&FEATURES=Decisions+%3E+Decision+%3E+Flow+%5Bapp.decisions.decision.flow%5D&FEATURES=Decisions+%3E+Decision+%3E+Make+Decisions+%5Bapp.decisions.decision.makeDecisions.file%5D&FEATURES=Decisions+%3E+Decision+%3E+Overview+%5Bapp.decisions.decision.overview%5D"
-
-    open https://chartio.com/datarobot/sandbox-igor-veksler-igor_decisions_dashboard/
-    open https://datarobot.atlassian.net/jira/software/projects/DECISION/boards/807
+    notion
+    mode
+    wnb
+    mixpanel
+    open https://app.fullstory.com/
+    open https://www.notion.so/wandbai/Data-Primer-Product-8c32c130390c48658acc35ffff730c4c 
+    open https://app.mode.com/wandb/reports/48f1302d2f51
 }
 
+beta_customers() {
+    open https://www.notion.so/wandbai/Red-Bull-Beta-Clips-404938fa3976453280f305b5ccd7e1d7 
+    open https://www.notion.so/wandbai/Gong-Beta-Clips-c11dd08218c44f6f8246740cd277208a
+    open https://www.notion.so/wandbai/Humane-Beta-Clips-443f6c603fe1488b8895bf8072811256
+}
+
+webinar() {
+    open https://docs.google.com/presentation/d/1xIBwuKahDkyCDE-5S3bEwvne71xQjB8-p9fomBOKeXA/edit#slide=id.g1546c866baf_0_275 
+    cd /Users/iveksl2/dev/examples/
+    open https://www.notion.so/wandbai/Jobs-vs-Runs-FAQ-0f7bfc9b8c2f4cf0b60369fdad04ca12    
+    open https://docs.wandb.ai/guides/launch#launch-quickstart
+    open https://www.notion.so/wandbai/Demo-for-Webinar-b8fa4e6c0cf84f8982b7478f97ef181d
+    open https://beta.wandb.ai/home
+}
+
+
+
+class() {
+    open https://www.udemy.com/course/hyperparameter-optimization-for-machine-learning/learn/lecture/26286796#overview
+    open https://www.clearerthinking.org/tools-and-mini-courses
+    open https://www.kaggle.com/learn/advanced-sql 
+    open https://academy.productboard.com/set-up-your-jira-integration
+    open "https://campus.datacamp.com/courses/mlops-concepts/design-and-development?ex=9"
+}
 
 # https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
 function send() {
@@ -198,3 +223,7 @@ function unzip_and_rezip() {
 
 # Useful startup articles
 # https://dev.to/malwarebo/how-to-set-python3-as-a-default-python-version-on-mac-4jjf
+
+exercise() {
+  open https://www.youtube.com/watch?v=0xfDmrcI7OI        
+}
