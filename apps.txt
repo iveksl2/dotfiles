@@ -5,5 +5,6 @@ spectacle -> https://www.spectacleapp.com/
 VSCode -> https://code.visualstudio.com/download
 RStudio -> https://www.rstudio.com/
 vim-plug -> https://github.com/junegunn/vim-plug
+tree -> `brew install tree`
 
 
