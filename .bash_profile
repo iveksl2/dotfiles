@@ -40,9 +40,9 @@ export PATH=$USER/.local/bin:$PATH
 export PATH="/Users/iveksl2/Library/Python/3.8/bin/wandb:$PATH"
 
 # aliases
-alias calendar='open https://calendar.google.com'
-alias cal='open https://calendar.google.com'
-alias slack='open https://app.slack.com/client/T02SCLWEU/unreads'
+alias calendar='open https://calendar.google.com/calendar/u/0/r'
+alias cal=calendar
+alias slack='open /Applications/Slack.app/'
 alias mail='open https://mail.google.com/'
 alias gdrive='open https://drive.google.com/'
 alias drive=gdrive
@@ -86,17 +86,30 @@ alias chorus='open https://chorus.ai/dashboard'
 alias gitbook='open https://app.gitbook.com/o/-Lr2SEfv2R3GSuF1kZCt/s/-Lqya5RvLedGEWPhtkjU-1972196547/'
 alias workout="open http://www.youtube.com/watch?v=w-G6NKP-fe8&t=168s"
 alias docsedit='open https://app.gitbook.com/'
-
-
-# workflow shortcuts
-
-daily() {
-  habit_log 
-  workflowy
-}
+alias chatgpt='open https://chat.openai.com/chat'
+alias fiver='open https://www.fiverr.com/'
+alias okrs='open https://www.notion.so/Q4-2022-Halfway-Retro-69b72af39e4349ae84d452310195476c#c238ea73ec4949fba9eac9d60e044211'
+alias gong='open https://us-39259.app.gong.io/home'
+alias book='open https://quarto.org/docs/books/'
+alias dalle2='open https://labs.openai.com/'
+alias kindle='open https://read.amazon.com/kindle-library'
+alias productivity='open https://docs.google.com/document/d/1E-vwmbQ7NB_Kva78eGPxCKCF7wC7EeOfvTljDU09nlU/edit'
+alias earnings='open https://www.tradingview.com/symbols/NASDAQ-AAPL/financials-earnings/'
+alias ui_beta='open https://beta.wandb.ai/home?betaVersion=jamie/launch-ui'
+alias health='open https://docs.google.com/document/d/1szbQg6bgK96Fp97BE_v_Id1zpnlImvtz75qsd90UujE/edit'
+alias notion_backlog='open https://www.notion.so/wandbai/Notion-Backlog-Planning-4e05bed95c2240c582d7c1765f33d7c9'
+alias daily='open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0'
+alias soundcloud='open https://soundcloud.com/hooper6000/sets/beautiful-young-minds-bbc-2'
+alias trello='open https://trello.com/u/igorveksler3/boards'
+alias diary='open https://docs.google.com/document/d/1GhbPJikkZwKSzxxwkeOSlzQu59sO8WeqkXJCs2GMT6Y/edit'
+alias learning='open https://docs.google.com/document/d/18BEW-MdANgcsdSfbDp70TkR7ePhI1AqXVimcbm7FAME/edit'
 
 social() {
   open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit 
+}
+
+analytics() {
+  open https://mixpanel.com/project/2536428/view/3076760/app/boards/#id=4654992
 }
 
 sleep() {
@@ -108,28 +121,14 @@ food() {
   open https://docs.google.com/spreadsheets/d/1lx30t0jTl7HB7D6EPabL8mR7VOxl4Qg78uhU8eVtG74/edit#gid=0 
 }
 
-
-llass() {
-    open https://www.coursera.org/learn/experimentation/home/
-    open https://wandb.ai/site/tutorials
-    open /Users/iveksl2/Downloads/NNFS.pdf # 335 
-    open https://fullstackdeeplearning.com/course/2022/
-    open https://github.com/full-stack-deep-learning/fsdl-text-recognizer-2022-labs
-    open https://drive.google.com/drive/u/0/my-drive
-    open https://campus.datacamp.com/courses/monte-carlo-simulations-in-python/
-    open https://blog.dataiku.com/how-to-perform-basic-ml-training-with-scikit-learn-docker-and-kubernetes
-    open https://blog.dataiku.com/how-to-perform-basic-ml-serving-with-python-docker-kubernetes
-    cd /Users/iveksl2/dev/nn_from_scratch
-    code .
-}
-
 finance() {
     open https://docs.google.com/spreadsheets/d/1KjhfhhdLs1v-f_w6BGCKR8LxGWEOz3wMffX4_pMxbB4/edit#gid=0 
     open https://docs.google.com/document/d/16I47Y1j3_AandbcAIClulEV4FZ3aRAEjfqPOKQ2j5Uk/edit #"trading signal library"
+    open https://docs.google.com/document/d/1YsRnJgmMvdgTBUaE29WMIct0xe4FZwePoRzrDqYH7EU/edit
 }
 
 weekly_review() {
-    open https://track.toggl.com/timer 
+    open 'https://track.toggl.com/timer'
     workflowy
     open https://www.asianefficiency.com/start-here/
     habit_log
@@ -137,6 +136,12 @@ weekly_review() {
     open https://docs.google.com/document/d/1OKvPdIN2OuKcCvDx--zFRoJPvia3L5K4ycRGALyd3_c/edit
     open https://docs.google.com/document/d/1EIagE85wyUOv-SAZ7ADqZbqfF3thMHEG2H3OzA6Kypo/edit
     open https://track.toggl.com/timer?utm_source=toggl-button&utm_medium=referral
+    open https://drive.google.com/drive/u/0/folders/17LN-YAK7PBGcv5joBIH7eEq05QLVNzAV
+    open https://docs.google.com/document/d/122wDR3NTpJyRT0NPqpBwEqdtQviNOSsj3WeMbFPkfNo/edit
+    open https://docs.google.com/document/d/1E-vwmbQ7NB_Kva78eGPxCKCF7wC7EeOfvTljDU09nlU/edit
+    open https://docs.google.com/document/d/18BEW-MdANgcsdSfbDp70TkR7ePhI1AqXVimcbm7FAME/edit # learning
+    diary
+    trello
 }
 
 dating() {
@@ -175,13 +180,19 @@ webinar() {
 }
 
 
+work() {
+   workflowy 
+   open https://calendar.google.com/calendar/u/1/r 
+}
 
 class() {
-    open https://www.udemy.com/course/hyperparameter-optimization-for-machine-learning/learn/lecture/26286796#overview
-    open https://www.clearerthinking.org/tools-and-mini-courses
-    open https://www.kaggle.com/learn/advanced-sql 
-    open https://academy.productboard.com/set-up-your-jira-integration
-    open "https://campus.datacamp.com/courses/mlops-concepts/design-and-development?ex=9"
+    open https://drive.google.com/drive/u/0/my-drive
+    open https://lightning.ai/pages/courses/deep-learning-fundamentals/
+    open https://www.davidsilver.uk/teaching/
+    open https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/
+    open https://github.com/PacktPublishing/Hands-On-Reinforcement-Learning-for-Games
+    open https://github.com/jonkrohn/ML-foundations
+    open https://colab.research.google.com/github/jonkrohn/ML-foundations/blob/master/notebooks/1-intro-to-linear-algebra.ipynb
 }
 
 # https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
@@ -189,6 +200,11 @@ function send() {
     git add .
     git commit -a -m "$1"
     git push
+}
+
+function qna() {
+    chatgpt
+    open "https://you.com/"
 }
 
 # https://jasonneylon.wordpress.com/2011/04/22/opening-github-in-your-browser-from-the-terminal/
@@ -227,3 +243,10 @@ function unzip_and_rezip() {
 exercise() {
   open https://www.youtube.com/watch?v=0xfDmrcI7OI        
 }
+
+backlog() {
+  open "https://www.notion.so/wandbai/Notion-Backlog-Planning-4e05bed95c2240c582d7c1765f33d7c9"
+}
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
